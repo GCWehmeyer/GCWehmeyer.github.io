@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Educational Background</title>
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+    <div class="containerEdu">       
+        <div id="home" class="flex-center flex-column"> 
+            <div class="title-box">
+                <h1>Educational Background</h1>
+            </div>
+
+            <button class="tablink" onclick="openPage('Matric', this)">Matric</button>
+            <button class="tablink" onclick="openPage('University', this)" id="defaultOpen">University</button>
+            <button class="tablink" onclick="openPage('Experience', this)">Experience</button>
+            <button class="tablink" onclick="openPage('Achievements', this)">Achievements</button>
+
+            <div id="Matric" class="tabcontent">
+                <h3>My Matric certificate</h3>
+                <p>[pdf]</p>
+            </div>
+
+            <div id="University" class="tabcontent">
+                <h3>University achievements</h3>
+                <p>Year 1: [pdf]</p>
+                <p>Year 2: [pdf]</p>
+                <p>Year 3: [pdf]</p>
+            </div>
+
+            <div id="Experience" class="tabcontent">
+                <h3>Experience within the industry</h3>
+                <p>SAIL minerals for a week</p>
+                <p>DeARX software development company for a week</p>
+            </div>
+
+            <div id="Achievements" class="tabcontent">
+                <h3>The Achievements I have revieced</h3>
+                <p>In my first year of studying Bsc in IT at the NWU Potchefstroom I was invited to become a member of Golden Key. 
+                    It is an honour to be a Golden Key member and a constant motovator to continue working hard.
+                </p>
+            </div>
+
+            <div class="navbar">
+                <a href="index.html" class="active">Home</a>
+                <a href="personalInfo.html">Personal Information</a>
+                <a href="educationalBack.html">Educational Background</a>
+              </div>
+        </div>   
+    </div>
+    <script src="pages.js"></script>
+</body>
+</html>
