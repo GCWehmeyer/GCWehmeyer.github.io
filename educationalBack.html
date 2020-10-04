@@ -7,27 +7,32 @@
     <link rel="stylesheet" href="app.css">
 </head>
 <body>
-    <div class="containerEdu">       
-        <div id="home" class="flex-center flex-column"> 
+    <div class="containerEdu">     
+        <!--<div id="loader"></div> -->
+        <div id="educationalBack" class="flex-center flex-column"> 
             <div class="title-box">
                 <h1>Educational Background</h1>
-            </div>
+            </div>        
 
-            <button class="tablink" onclick="openPage('Matric', this)">Matric</button>
-            <button class="tablink" onclick="openPage('University', this)" id="defaultOpen">University</button>
-            <button class="tablink" onclick="openPage('Experience', this)">Experience</button>
-            <button class="tablink" onclick="openPage('Achievements', this)">Achievements</button>
+            <button class="tablink" onclick="openPage('Matric', this, '#2196F3')" id="defaultOpen">Matric</button>
+            <button class="tablink" onclick="openPage('University', this,  '#2152f3')">University</button>
+            <button class="tablink" onclick="openPage('Experience', this, '#2f21f3')">Experience</button>
+            <button class="tablink" onclick="openPage('Achievements', this, '#7221f3')">Achievements</button>
 
-            <div id="Matric" class="tabcontent">
-                <h3>My Matric certificate</h3>
-                <p>[pdf]</p>
+            <div id="Matric" class="tabcontent"> 
+                <h2 onclick="matricDisplay()" >Matric Certificate:</h2>     
+                <iframe id="displayPDF" src="MatricCertificate.pdf" width="100%" height="200px"></iframe>   
             </div>
 
             <div id="University" class="tabcontent">
                 <h3>University achievements</h3>
-                <p>Year 1: [pdf]</p>
-                <p>Year 2: [pdf]</p>
-                <p>Year 3: [pdf]</p>
+                
+                <h4 onclick ="yearOneDisplay()" >Year one: <iframe id="yearOnePDF" src="reportYearOne.pdf" width="100%" height="100px">
+                </iframe></h4>
+                <h4 onclick ="yearTwoDisplay()" >Year two: <iframe id="yearTwoPDF" src="reportYearTwo.pdf" width="100%" height="100px">
+                </iframe></h4>
+                <h4 onclick ="yearThreeDisplay()" >Year three: <iframe id="yearThreePDF" src="reportYearThree.pdf" width="100%" height="100px">
+                </iframe></h4>
             </div>
 
             <div id="Experience" class="tabcontent">
@@ -39,8 +44,10 @@
             <div id="Achievements" class="tabcontent">
                 <h3>The Achievements I have revieced</h3>
                 <p>In my first year of studying Bsc in IT at the NWU Potchefstroom I was invited to become a member of Golden Key. 
-                    It is an honour to be a Golden Key member and a constant motovator to continue working hard.
+                    It is an honour to be a Golden Key member and knowing that hard work pays off.
+
                 </p>
+                <iframe id="displayPDF" src="goldenKey.pdf" width="100%" height="200px"></iframe>   
             </div>
 
             <div class="navbar">

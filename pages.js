@@ -1,25 +1,58 @@
-function openPage(pageName, elmnt, color) {
-    // Hide all elements with class="tabcontent" by default */
+const titleBox = document.getElementById("title-box");
+const loader = document.getElementById("loader");
+const educationalBack = document.getElementById("educationalBack");
+
+/*await new Promise(r => setTimeout(r, 2000));
+educationalBack.classList.remove("hidden");*/
+
+function matricDisplay() {
+    if (document.getElementById("displayPDF").style.display == "none"){
+        document.getElementById("displayPDF").style.display = "block";
+    }
+    else {
+        document.getElementById("displayPDF").style.display = "none";
+    }
+}
+
+function yearOneDisplay() {
+    if (document.getElementById("yearOnePDF").style.display == "none"){
+        document.getElementById("yearOnePDF").style.display = "block";
+    }
+    else {
+        document.getElementById("yearOnePDF").style.display = "none";
+    }
+}
+
+function yearTwoDisplay() {
+    if (document.getElementById("yearTwoPDF").style.display == "none"){
+        document.getElementById("yearTwoPDF").style.display = "block";
+    }
+    else {
+        document.getElementById("yearTwoPDF").style.display = "none";
+    }
+}
+
+function yearThreeDisplay() {
+    if (document.getElementById("yearThreePDF").style.display == "none"){
+        document.getElementById("yearThreePDF").style.display = "block";
+    }
+    else {
+        document.getElementById("yearThreePDF").style.display = "none";
+    }
+}
+
+ function openPage(pageName, elmnt, color) {
     var i, tabcontent, tablinks;
     tabcontent = document.getElementsByClassName("tabcontent");
     for (i = 0; i < tabcontent.length; i++) {
       tabcontent[i].style.display = "none";
     }
-  
-    // Remove the background color of all tablinks/buttons
     tablinks = document.getElementsByClassName("tablink");
     for (i = 0; i < tablinks.length; i++) {
       tablinks[i].style.backgroundColor = "";
     }
-  
-    // Show the specific tab content
     document.getElementById(pageName).style.display = "block";
-  
-    // Add the specific color to the button used to open the tab content
     elmnt.style.backgroundColor = color;
-  }
-  
-  // Get the element with id="defaultOpen" and click on it
-  document.getElementById("defaultOpen").click();
-
+  } 
+  document.getElementById("defaultOpen").click(); 
   
