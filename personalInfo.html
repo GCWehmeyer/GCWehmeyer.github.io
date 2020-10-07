@@ -6,18 +6,25 @@
     <title>Personal Information</title>
     <link rel="stylesheet" href="app.css">
 </head>
-<body>
-    <div class="containerPer">       
+<body>    
+    <div class="containerPer">    
+        <div id="loader"></div>
+        
         <div id="personalInfo" class="flex-center flex-column">
             <div class="title-box">
                 <h1>Personal Information</h1>
             </div>
 
-            <div class = "text-container">
+            <div id="someInfo" class="text-container" onclick="about()">
                 <h3>I have been studying Information Technology since high school and to this day, 
                     still learning new and interesting things about the theory on the subject as well as plenty of programming languages 
                     that I use to solve a number of problems. I have always been intressted in creating solutions to help solve problems 
                     and software development has given me a way to do just that.</h3>
+            </div>
+
+            <div id="realInfo" class="text-contact" onclick="someInfo()">
+                <h3>Contact Number: (+27) 081 410 6258 </h3>
+                <h3>Email-address: gcwehmeyer.10@gmail.com</h3>
             </div>
 
                 <div class="icon">
@@ -67,6 +74,7 @@
               </div>
         </div>   
     </div> 
-    <script src="pages.js"></script>  
+    <script src="pages.js"></script> 
+    <!--<script src="pages.js"></script>-->  
 </body>
 </html>

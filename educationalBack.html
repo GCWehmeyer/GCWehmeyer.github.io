@@ -8,46 +8,52 @@
 </head>
 <body>
     <div class="containerEdu">     
-        <!--<div id="loader"></div> -->
+        <div id="loader"></div>
         <div id="educationalBack" class="flex-center flex-column"> 
             <div class="title-box">
                 <h1>Educational Background</h1>
             </div>        
 
-            <button class="tablink" onclick="openPage('Matric', this, '#2196F3')" id="defaultOpen">Matric</button>
+            <button class="tablink" onclick="openPage('Matric', this, '#2196F3')" >Matric</button>
             <button class="tablink" onclick="openPage('University', this,  '#2152f3')">University</button>
             <button class="tablink" onclick="openPage('Experience', this, '#2f21f3')">Experience</button>
             <button class="tablink" onclick="openPage('Achievements', this, '#7221f3')">Achievements</button>
 
             <div id="Matric" class="tabcontent"> 
-                <h2 onclick="matricDisplay()" >Matric Certificate:</h2>     
-                <iframe id="displayPDF" src="MatricCertificate.pdf" width="100%" height="200px"></iframe>   
+                <h2 onclick="matricDisplay()" >Matric Certificate: 
+                <iframe id="displayPDF" src="MatricCertificate.pdf" width="100%" height="250px"></iframe> </h2>     
             </div>
 
             <div id="University" class="tabcontent">
-                <h3>University achievements</h3>
+                <h3>University year results</h3>
                 
                 <h4 onclick ="yearOneDisplay()" >Year one: <iframe id="yearOnePDF" src="reportYearOne.pdf" width="100%" height="100px">
                 </iframe></h4>
                 <h4 onclick ="yearTwoDisplay()" >Year two: <iframe id="yearTwoPDF" src="reportYearTwo.pdf" width="100%" height="100px">
                 </iframe></h4>
-                <h4 onclick ="yearThreeDisplay()" >Year three: <iframe id="yearThreePDF" src="reportYearThree.pdf" width="100%" height="100px">
+                <h4 onclick ="yearThreeDisplay()" >Year three: <iframe id="yearThreePDF" src="reportYearThree.pdf" width="100%" height="100px"></iframe>
                 </iframe></h4>
             </div>
 
             <div id="Experience" class="tabcontent">
                 <h3>Experience within the industry</h3>
-                <p>SAIL minerals for a week</p>
-                <p>DeARX software development company for a week</p>
+                <p>I have no full time work experience but I have visited two diffirent companies with the intention to learn about the work environment.</p>
+                <p>The first was SAIL Minerals; a mining company that specialsizes in chrome mining, logistics and supply. 
+                   I visited for a week and in this week I learned about system development and deployment within the company. I attended a meeting about solving 
+                problems that occurred within the system and saw a practical representation of problem solving within the work place. The times that I was not learning about the system of the company 
+                I helped assempble new parts into laptops.</p>
+                <p>The second was DeARX; a software development company. I also visited this company for a week and within this week I learned what 
+                    it takes to develop software for other companies. The amount of team work and understanding that goes into the development of software is almost as important 
+                    as all the seperate parts.
+                </p>
             </div>
 
             <div id="Achievements" class="tabcontent">
                 <h3>The Achievements I have revieced</h3>
                 <p>In my first year of studying Bsc in IT at the NWU Potchefstroom I was invited to become a member of Golden Key. 
                     It is an honour to be a Golden Key member and knowing that hard work pays off.
-
-                </p>
                 <iframe id="displayPDF" src="goldenKey.pdf" width="100%" height="200px"></iframe>   
+                </p>                
             </div>
 
             <div class="navbar">

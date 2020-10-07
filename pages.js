@@ -1,9 +1,21 @@
-const titleBox = document.getElementById("title-box");
 const loader = document.getElementById("loader");
 const educationalBack = document.getElementById("educationalBack");
+const personalInfo = document.getElementById("personalInfo");
 
-/*await new Promise(r => setTimeout(r, 2000));
-educationalBack.classList.remove("hidden");*/
+var change = false;
+var pathArray = window.location.pathname.split('/');
+
+if  (pathArray[1] == "personalInfo.html"){
+    setTimeout(function(){
+        loader.classList.add("hidden");
+    }, 1500);
+}
+
+if  (pathArray[1] == "educationalBack.html"){
+    setTimeout(function(){
+        loader.classList.add("hidden");
+    }, 2500);
+}
 
 function matricDisplay() {
     if (document.getElementById("displayPDF").style.display == "none"){
@@ -41,7 +53,7 @@ function yearThreeDisplay() {
     }
 }
 
- function openPage(pageName, elmnt, color) {
+function openPage(pageName, elmnt, color) {
     var i, tabcontent, tablinks;
     tabcontent = document.getElementsByClassName("tabcontent");
     for (i = 0; i < tabcontent.length; i++) {
@@ -53,6 +65,17 @@ function yearThreeDisplay() {
     }
     document.getElementById(pageName).style.display = "block";
     elmnt.style.backgroundColor = color;
-  } 
-  document.getElementById("defaultOpen").click(); 
+}
+
+function about() {
+    document.getElementById("someInfo").style.display = "none";
+    document.getElementById("realInfo").style.display = "block";
+}1
+
+function someInfo() {
+    document.getElementById("realInfo").style.display = "none";
+    document.getElementById("someInfo").style.display = "block";
+}
+
+
   
