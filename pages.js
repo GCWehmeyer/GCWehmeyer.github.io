@@ -14,7 +14,7 @@ if  (pathArray[1] == "personalInfo.html"){
 if  (pathArray[1] == "educationalBack.html"){
     setTimeout(function(){
         loader.classList.add("hidden");
-    }, 2500);
+    }, 1800);
 }
 
 function matricDisplay() {
@@ -50,6 +50,15 @@ function yearThreeDisplay() {
     }
     else {
         document.getElementById("yearThreePDF").style.display = "none";
+    }
+}
+
+function goldenDisplay() {
+    if (document.getElementById("goldenPDF").style.display == "none"){
+        document.getElementById("goldenPDF").style.display = "block";
+    }
+    else {
+        document.getElementById("goldenPDF").style.display = "none";
     }
 }
 
